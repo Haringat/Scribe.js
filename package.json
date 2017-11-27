@@ -22,6 +22,7 @@
       "url": "https://github.com/bluejamesbond/Scribe.js/blob/master/LICENSE-MIT"
     }
   ],
+  "typings": "./scribe.d.ts",
   "main": "scribe.js",
   "license": "MIT",
   "dependencies": {

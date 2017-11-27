@@ -1,7 +1,6 @@
 import * as Console2 from "./lib/console2";
 import * as expressLogger from "./lib/expressLogger";
 import { LogWriter } from "./lib/logWriter";
-import * as webPanel from "./lib/webPanel";
 import { Router } from "express";
 
 declare namespace scribe {
