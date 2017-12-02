@@ -1,12 +1,19 @@
-import * as Console2 from "./lib/console2";
+import {
+    Console2,
+    Console2Static
+} from "./lib/console2";
 import * as expressLogger from "./lib/expressLogger";
-import { LogWriter } from "./lib/logWriter";
-import { Router } from "express";
+import {
+    LogWriter
+} from "./lib/logWriter";
+import {
+    Router
+} from "express";
 
 declare namespace scribe {
 
     export interface AddConsoleFunction {
-        (config, logWriter): Console2;
+        (config, logWriter): Console2<string>;
     }
 
     export interface InitWebPanelFunction {
@@ -22,7 +29,7 @@ declare namespace scribe {
         console: AddConsoleFunction;
         webPanel: InitWebPanelFunction;
         express: typeof expressLogger;
-        Console2: typeof Console2;
+        Console2: Console2Static;
         LogWriter: typeof LogWriter;
     }
 }

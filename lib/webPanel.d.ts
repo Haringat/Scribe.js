@@ -1,10 +1,16 @@
-import {Router} from "express";
-import * as Console2 from "./console2";
-import {LogWriter} from "./logWriter";
+import {
+    Router
+} from "express";
+import {
+    Console2
+} from "./console2";
+import {
+    LogWriter
+} from "./logWriter";
 
 declare namespace webPanel {
     export interface Console {
-        console: Console2;
+        console: Console2<string>;
         logWriter: null | LogWriter;
     }
 }

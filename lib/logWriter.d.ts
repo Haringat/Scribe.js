@@ -1,4 +1,6 @@
-import {Options as Console2Options} from "./console2";
+import {
+    Options as Console2Options
+} from "./console2";
 
 export interface Options {
     /**
@@ -105,4 +107,4 @@ export class LogWriter {
 
 }
 
-export const rootPaths: Array<string>;
+export const folders: Array<string>;

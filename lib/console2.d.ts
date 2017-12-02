@@ -1,4 +1,6 @@
-import {EventEmitter} from "events";
+import {
+    EventEmitter
+} from "events";
 
 declare namespace Console2 {
     /**
@@ -85,13 +87,7 @@ declare namespace Console2 {
         colors: color;
     }
 
-    export type loggerNames = Array<string>;
-
     export type tag = string | TagObject;
-
-    export type Console2Loggers<T> = {
-        [key in keyof T]: LogFunction;
-        }
 
     interface Console2Static {
 
