@@ -26,13 +26,15 @@
   "main": "scribe.js",
   "license": "MIT",
   "dependencies": {
-    "@types/express": "^4.0.39",
-    "@types/node": "^8.0.53",
     "callsite": "^1.0.0",
     "colors": "^1.0.0",
     "express": "^4.0.0",
     "mkdirp": "^0.5.0",
     "moment": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.39",
+    "@types/node": "^8.0.53"
   },
   "readmeFilename": "README.md"
 }
